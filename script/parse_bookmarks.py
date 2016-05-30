@@ -9,7 +9,6 @@ import getopt
 from xml.sax.saxutils import escape
 import pdb
 
-
 ##
 #
 def createBMTag(jsonBMDict):
@@ -42,7 +41,6 @@ def createBMTag(jsonBMDict):
     # Close up the bookmark tag
     bmStr = "{0}</bookmark>".format(bmStr)
     return bmStr
-
 
 ##
 #
@@ -101,8 +99,7 @@ def parseJSON(in_f, out_f):
 <xbel version=\"1.0\">
 """)
 
-    #for child in data['children']:
-    #for child in data['children'][2]: # select unsorted bookmarks
+    # Selecting 'Unsorted bookmarks' only.
     my_list = [data['children'][2]]
     for child in my_list:
         if child['children']:
@@ -116,14 +113,12 @@ def parseJSON(in_f, out_f):
     out_f_writer.write("</xbel>")
     out_f_writer.close()
 
-
 ##
 #
 def usage():
     print('python moz_bm_json_to_xbel.py')
     print('  -f <file> (required)')
     print('  -h <help> (optional)')
-
 
 ##
 #
