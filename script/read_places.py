@@ -1,9 +1,13 @@
 #---------------------------------------------------------------------------#
 # Create XBEL bookmarks file from Firefox's places.sqlite 
+# The output can be rendered nicely in a web-browser using XSLT
+# ? Which XSLT 
+# ? Credit
 #---------------------------------------------------------------------------#
 
 import os
 import sqlite3
+from xml.sax.saxutils import escape
 import pdb
 
 db = r'/home/{0}/.mozilla/firefox/wpatskez.default/places.sqlite'.format(
@@ -18,7 +22,7 @@ def process_bookmark(foreign_key):
     sql = r'SELECT id,url FROM moz_places WHERE ID = {0}'.format(foreign_key)
     rs = {r'href':r''}
     for row in c.execute(sql):
-        rs[r'href'] = row['url']
+        rs[r'href'] = escape(row['url'])
     return rs
 
 ##
@@ -30,7 +34,7 @@ def process_folder(an_id):
     # Prep. folder
     sql = r'SELECT * FROM moz_bookmarks WHERE id = {0}'.format(an_id);
     for row in c.execute(sql):
-         print("<folder FOLDERID=\"{0}\">".format(row['title']))
+         print("<folder FOLDERID=\"{0}\">".format(escape(row['title'])))
          print("<title>{0}</title>".format(row['title']))
     # Process remaining
     sql = r'SELECT * FROM moz_bookmarks WHERE PARENT = {0}'.format(an_id)
@@ -43,7 +47,7 @@ def process_folder(an_id):
             # Process the bookmark
             print("<bookmark href=\"{0}\" bmid=\"{1}\">".format(
                 process_bookmark(row['fk'])['href'], row['guid']))
-            print("<title>{0}</title>".format(row['title']))
+            print("<title>{0}</title>".format(escape(row['title'])))
             print("</bookmark>")
     conn.close()
     print("</folder>")
