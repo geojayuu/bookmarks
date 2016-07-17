@@ -52,18 +52,6 @@ def process_folder(an_id):
     conn.close()
     print("</folder>")
 
-#<folder FOLDERID="Unsorted Bookmarks">
-# <title>Unsorted Bookmarks</title>
-#  <bookmark
-#   href="http://leancrew.com/all-this/2015/06/better-option-parsing-in-python-maybe/"
-#   bmid="bm1">
-#   <title>Better option parsing in Python (maybe) - All this</title>
-#  </bookmark>
-#  <bookmark href="http://bl.ocks.org/patricksurry/6478178" bmid="bm2">
-#   <title>D3JS quadtree nearest neighbor algorithm - bl.ocks.org</title>
-#  </bookmark>
-#</folder>
-
 ##
 #
 def main(argv=None):

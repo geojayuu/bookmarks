@@ -200,6 +200,12 @@
 <bookmark href="https://dev.mutt.org/trac/wiki/UseCases/Gmail" bmid="humRMln2iPFy">
 <title>UseCases/Gmail – Mutt</title>
 </bookmark>
+<bookmark href="http://unix.stackexchange.com/questions/49980/mutt-responsive-way-to-refresh-inbox" bmid="YnOcGz0lKH3f">
+<title>mutt responsive way to refresh inbox - Unix &amp; Linux Stack Exchange</title>
+</bookmark>
+<bookmark href="http://unix.stackexchange.com/questions/131529/how-can-i-configure-mutt-to-display-my-replies-within-threads" bmid="9Yqt9rzhhK58">
+<title>email - How can I configure mutt to display my replies within threads? - Unix &amp; Linux Stack Exchange</title>
+</bookmark>
 </folder>
 <folder FOLDERID="Backup">
 <title>Backup</title>
@@ -216,6 +222,18 @@
 <title>System maintenance - ArchWiki</title>
 </bookmark>
 </folder>
+<folder FOLDERID="Setup">
+<title>Setup</title>
+<bookmark href="http://askubuntu.com/questions/190700/help-with-synclient-configuration-on-an-elantech-touchpad" bmid="dFbhY8IJeWbq">
+<title>asus - help with synclient configuration on an Elantech touchpad - Ask Ubuntu</title>
+</bookmark>
+</folder>
+<bookmark href="https://bbs.archlinux.org/viewtopic.php?id=200494" bmid="kkH1S7oxitA4">
+<title>[SOLVED] GNOME, neglecting my 50-synaptics.conf / Applications &amp; Desktop Environments / Arch Linux Forums</title>
+</bookmark>
+<bookmark href="https://wiki.archlinux.org/index.php/Touchpad_Synaptics" bmid="hRTZfIOzBXYz">
+<title>Touchpad Synaptics - ArchWiki</title>
+</bookmark>
 </folder>
 <bookmark href="http://www.commandlinefu.com/commands/browse" bmid="aY6NeH5YoNsr">
 <title>All commands | commandlinefu.com</title>
@@ -234,19 +252,37 @@
 <bookmark href="http://www.saminiir.com/establish-cryptographic-identity-using-gnupg/" bmid="lugkn_vH38HC">
 <title>Establish your online identity using GnuPG</title>
 </bookmark>
+<bookmark href="http://irtfweb.ifa.hawaii.edu/~lockhart/gpg/gpg-cs.html" bmid="6azNFBcvKd0f">
+<title>GPG Cheat Sheet</title>
+</bookmark>
+<bookmark href="https://futureboy.us/pgp.html" bmid="ZE2Xc8ssuyxf">
+<title>GPG tutorial and PGP Public Key for Alan Eliasen</title>
+</bookmark>
+<bookmark href="https://gpgtools.tenderapp.com/kb/how-to/trusting-keys-and-why-this-signature-is-not-to-be-trusted" bmid="FovsjdRMcfB3">
+<title>Trusting keys and why &amp;#x27;This signature is not to be trusted.&amp;#x27; / Tutorials / Knowledge Base - GPGTools Support</title>
+</bookmark>
+<bookmark href="http://unix.stackexchange.com/questions/53912/i-try-to-add-passwords-to-the-pass-password-manager-but-my-attempts-fail-with" bmid="0FVA1PTOml-y">
+<title>utilities - I try to add passwords to the "pass" password manager. But my attempts fail with "no public key" GPG errors. Why? - Unix &amp; Linux Stack Exchange</title>
+</bookmark>
 </folder>
-</folder>
+<folder FOLDERID="ssh">
+<title>ssh</title>
 <bookmark href="http://serverfault.com/questions/50775/how-do-i-change-my-private-key-passphrase" bmid="i3oJyG8tC7TX">
 <title>ssh - How do I change my private key passphrase? - Server Fault</title>
-</bookmark>
-<bookmark href="http://stackoverflow.com/questions/25464930/how-to-remove-a-ssh-key" bmid="_xQ3ebb5W_Wj">
-<title>git - How to remove a ssh key? - Stack Overflow</title>
 </bookmark>
 <bookmark href="http://superuser.com/questions/30087/remove-key-from-known-hosts" bmid="hZvo_to4eM6G">
 <title>ssh - Remove key from known_hosts - Super User</title>
 </bookmark>
+</folder>
+</folder>
+<folder FOLDERID="github">
+<title>github</title>
 <bookmark href="http://stackoverflow.com/questions/10032461/git-keeps-asking-me-for-my-ssh-key-passphrase" bmid="p2pDx-U8IdqK">
 <title>github - Git keeps asking me for my ssh key passphrase - Stack Overflow</title>
 </bookmark>
+<bookmark href="http://stackoverflow.com/questions/25464930/how-to-remove-a-ssh-key" bmid="_xQ3ebb5W_Wj">
+<title>git - How to remove a ssh key? - Stack Overflow</title>
+</bookmark>
+</folder>
 </folder>
 </xbel>
