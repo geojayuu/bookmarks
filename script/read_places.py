@@ -55,7 +55,7 @@ def process_folder(an_id, db):
     sql = r'SELECT * FROM moz_bookmarks WHERE id = {0}'.format(an_id);
     for row in c.execute(sql):
          print("<folder FOLDERID=\"{0}\">".format(escape(row['title'])))
-         print("<title>{0}</title>".format(row['title']))
+         print("<title>{0}</title>".format(escape(row['title'])))
     # Process remaining
     sql = r'SELECT * FROM moz_bookmarks WHERE PARENT = {0}'.format(an_id)
     # todo FOLDER info. should be set here.
@@ -79,12 +79,11 @@ def main(argv=None):
     # Find Mozilla profile dir
     db = find_mozilla_places_db() 
     # Set up file
-    print("""
-    <?xml version="1.0"?>
+    print("""<?xml version="1.0"?>
     <!DOCTYPE xbel 
     PUBLIC "+//IDN python.org//DTD XML Bookmark Exchange Language 1.0//EN//XML" 
     "http://www.python.org/topics/xml/dtds/xbel-1.0.dtd">
-    <xbel version="1.0">""")
+<xbel version="1.0">""")
     # We want to process all folders in 'All Bookmarks'
     # - Bookmarks Menu/Mozilla Firefox      (id 27)
     # - Unsorted Bookmarks                  (id 5)
